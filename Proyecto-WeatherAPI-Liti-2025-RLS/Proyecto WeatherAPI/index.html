@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather API</title>
+    <link rel="icon" type="image/png" href="favicon-32x32.png">
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css">
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+</head>
+<body>
+    <div class="header"></div>
+    <div class="tittle">
+        <h2>Weather API</h2>
+    </div>
+    <div class="container">
+        <div class="input-group">
+            <select id="city-select" class="selection" aria-label="Selecciona una ciudad">
+                <option value="" selected>Selecciona una ciudad</option>
+            </select>
+            <button id="get-weather-btn" class="wbttn">Clima</button>
+            <button id="rst-weather-" class="wbttnrst">Rest.</button>
+        </div>
+    </div>
+    <div class="divisor"></div>
+
+    <div id="weather-result" class="result" role="region" aria-label="Weather result" hidden>
+        <section id="current-section" class="section current-section" aria-label="Current weather">
+        </section>
+        <section id="forecast-grid-section" class="section forecast-grid-section" aria-label="7-day forecast summary">
+        </section>
+        <section id="forecast-details-section" class="section forecast-details-section" aria-label="Forecast details">
+        </section>
+    </div>
+    <script src="weather-logic.js"></script>
+    <div class="pie_pagina"></div>
+</body>
+</html>
